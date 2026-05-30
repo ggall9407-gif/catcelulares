@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Virtual de Celulares a Crédito</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f6fa;
+            color: #2f3640;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 10px;
+            background: #ffffff;
+            border-radius: 16px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #111111;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 5px 0 0 0;
+            color: #4caf50;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #f1f2f6;
+        }
+        .img-container {
+            width: 100%;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #111111;
+            margin: 0 0 6px 0;
+            text-align: center;
+        }
+        .specs {
+            font-size: 11px;
+            color: #666666;
+            margin: 0 0 12px 0;
+            padding-left: 12px;
+            list-style-type: square;
+        }
+        .specs li {
+            margin-bottom: 4px;
+        }
+        .price-tag {
+            background: #e8f5e9;
+            border-left: 3px solid #4caf50;
+            padding: 6px 8px;
+            border-radius: 0 8px 8px 0;
+            text-align: center;
+        }
+        .price-label {
+            font-size: 9px;
+            text-transform: uppercase;
+            color: #2e7d32;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+        }
+        .price-value {
+            font-size: 15px;
+            font-weight: 800;
+            color: #1b5e20;
+            margin-top: 1px;
+        }
+        .footer-banner {
+            margin-top: 30px;
+            background: #111111;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            font-size: 13px;
+        }
+        .footer-banner ul {
+            text-align: left;
+            display: inline-block;
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+        .footer-banner li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>CATÁLOGO VIRTUAL</h1>
+        <p>📱 Tus Equipos Favoritos a Crédito</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/ZqJpkqVR/1ad29952-e959-4ca8-8a88-73a15cba0cf6-2a5bdd31625db9bba95f212c0ca047a8.jpg" alt="Redmi 15C">
+                </div>
+                <div class="title">Redmi 15C</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 128 GB</li>
+                    <li>Batería de larga duración</li>
+                    <li>Fotos ultra claras</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Menos de $500</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/5tfLctn6/4df33d52-4cf7-482b-a218-2e94638b0bc2-798c1bd0077c7db66a68e8f7a26d7556.jpg" alt="Infinix Hot 60i">
+                </div>
+                <div class="title">Infinix Hot 60i</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Pantalla súper fluida</li>
+                    <li>Carga ultra rápida</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Menos de $500</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/J7XNBSDH/D-NQ-NP-833269-MLA101905261273-122025-O-(1).webp" alt="Galaxy A17">
+                </div>
+                <div class="title">Galaxy A17</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 128 GB</li>
+                    <li>Pantalla HD de alta gama</li>
+                    <li>Sistema inteligente</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/cJdwqJXy/1-33197dce-5c08-499a-ac12-cc1815c8369e.jpg" alt="Galaxy A16">
+                </div>
+                <div class="title">Galaxy A16</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 128 GB</li>
+                    <li>Seguridad de datos avanzada</li>
+                    <li>Batería para todo el día</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/Z58pDNFT/c7300e29-fde9-41a5-ac2d-c50aee6ac39d-ceab7bbc94a34060bf1a6f69cb41e382.jpg" alt="Infinix GT30 PRO">
+                </div>
+                <div class="title">Infinix GT30 PRO</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Potencia gamer especial</li>
+                    <li>Diseño premium</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/2SQhXWF8/1172179050.jpg" alt="Redmi Note 14">
+                </div>
+                <div class="title">Redmi Note 14</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 128 GB</li>
+                    <li>Pantalla AMOLED de cine</li>
+                    <li>Cámara profesional</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/vmGfRm3R/Spark-30c-Orbit-Black.jpg" alt="Tecno Spark 30C">
+                </div>
+                <div class="title">Tecno Spark 30C</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Diseño vanguardista</li>
+                    <li>Rendimiento continuo</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/6QBnsQY5/8513b746-8363-4cbb-93e0-2feae16bd1d7-2ea1cf9501e9953c8ebc410051704e4d.jpg" alt="Moto G15">
+                </div>
+                <div class="title">Moto G15</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Sonido estéreo nítido</li>
+                    <li>Cámara con Inteligencia Artificial</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/s237F2ws/images-(3).jpg" alt="Moto G06">
+                </div>
+                <div class="title">Moto G06</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 64 GB</li>
+                    <li>Elegante, cómodo y ligero</li>
+                    <li>Perfecto para redes sociales</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/TPTg8PCX/images-(4).jpg" alt="Moto G04S">
+                </div>
+                <div class="title">Moto G04S</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 128 GB</li>
+                    <li>Pantalla de alta definición</li>
+                    <li>Cámara para fotos brillantes</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/x1vMFmy1/1ea7d6d9-e2d1-4aa4-aa7e-3e0b1398fb19-b020330e9406d2eb5d26d69aee72f75b.jpg" alt="HONOR X7c">
+                </div>
+                <div class="title">HONOR X7c</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Cámara de súper resolución</li>
+                    <li>Carga ultra rápida</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/vT55F6FG/D-NQ-NP-946904-MLM93113243735-092025-O.webp" alt="Modio Kids Tab M2">
+                </div>
+                <div class="title">Modio Kids Tab M2</div>
+                <ul class="specs">
+                    <li><b>Memoria:</b> 256 GB</li>
+                    <li>Funda de goma anticaídas</li>
+                    <li>Control parental seguro</li>
+                </ul>
+            </div>
+            <div class="price-tag">
+                <div class="price-label">Enganche</div>
+                <div class="price-value">Desde $200</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-banner">
+        <b>📝 REQUISITOS GENERALES PARA EL TRÁMITE</b><br>
+        <ul>
+            <li>Presentar INE física vigente en original.</li>
+            <li>La aprobación requiere presencia física en tienda (Trámite al momento).</li>
+            <li>Paga tu enganche y estrena el mismo día.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
